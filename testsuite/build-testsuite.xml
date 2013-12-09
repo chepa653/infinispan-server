@@ -12,6 +12,7 @@
     <property name="leveldb.compression" value="SNAPPY" />
     <property name="leveldb.impl" value="JAVA" />
     <property name="leveldb.patch" value="false" />
+    <property name="transport.stack" value="udp"/>
     <property name="zip.dist" value="false" />
     <property name="zip.dist.old" value="false" />
     <property name="log.level.infinispan" value="INFO"/>
@@ -22,6 +23,7 @@
         <filter token="leveldb.compression" value="${leveldb.compression}" />
         <filter token="leveldb.impl" value="${leveldb.impl}" />
         <filter token="resources.dir" value="${resources.dir}" />
+        <filter token="transport.stack" value="${transport.stack}"/>
     </filterset>
 
     <target name="create-distro1" description="Create first distribution of Infinispan server by copying the one from build/target directory or unpacking a distro zip">
